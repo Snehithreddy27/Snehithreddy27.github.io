@@ -9,6 +9,9 @@ body {
   background: #020617;
   color: #e5e7eb;
 }
+.section {
+  margin: 80px auto;
+}
 
 .section {
   max-width: 1100px;
@@ -47,6 +50,16 @@ body {
   font-size: 14px;
   margin-bottom: 10px;
 }
+.skill-group span {
+  display: inline-block;
+  background: #020617;
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin: 6px;
+  font-size: 14px;
+  color: #cbd5f5;
+}
 
 /* Project cards */
 .project-card {
@@ -61,6 +74,19 @@ body {
   color: #22d3ee;
   text-decoration: none;
   font-weight: 500;
+}
+.project-card h3 {
+  color: #22d3ee;
+  margin-bottom: 5px;
+}
+
+.project-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.15);
 }
 
 .project-card a:hover {
@@ -123,27 +149,21 @@ body {
 <div class="section" id="skills">
   <h2>Skills</h2>
 
-  <p><b>Data Analysis & Modeling:</b><br>
-    Data Cleaning, Data Validation, Schema Design, Data Modeling, KPI Reporting,
-    EDA, Trend Analysis, Forecasting
-  </p>
-
-  <p><b>Tools & Programming:</b><br>
-    SQL, Python (Pandas, NumPy), Excel (Advanced), Power BI, Tableau
-  </p>
-
-  <p><b>Visualization:</b><br>
-    Matplotlib, Seaborn
-  </p>
-
-  <p><b>Cloud & Databases:</b><br>
-    AWS (S3, Glue, Athena, Kinesis), Snowflake, NoSQL, Azure & GCP (Basics)
-  </p>
-
-  <p><b>Other:</b><br>
-    Problem Solving, Documentation, Troubleshooting, Agile, Team Collaboration
-  </p>
+  <div class="skill-group">
+    <span>SQL</span>
+    <span>Python (Pandas, NumPy)</span>
+    <span>Excel (Advanced)</span>
+    <span>Power BI</span>
+    <span>Tableau</span>
+    <span>EDA</span>
+    <span>Data Validation</span>
+    <span>Data Modeling</span>
+    <span>AWS</span>
+    <span>Snowflake</span>
+    <span>Azure (Basics)</span>
+  </div>
 </div>
+
 
 
 <div class="section" id="projects">
@@ -214,15 +234,24 @@ body {
 <div class="section" id="contact">
   <h2>Contact</h2>
 
-  <p>📞 <a href="tel:+916304954447" style="color:#22d3ee;">+91 63049 54447</a></p>
-  <p>✉️ <a href="mailto:snehith2730@gmail.com" style="color:#22d3ee;">snehith2730@gmail.com</a></p>
+  <p>
+    📞 <a href="tel:+916304954447">+91 63049 54447</a>
+  </p>
+  <p>
+    ✉️ <a href="mailto:snehith2730@gmail.com">snehith2730@gmail.com</a>
+  </p>
   <p>📍 Hyderabad, India</p>
 
-  <p>
-    <a href="https://github.com/Snehithreddy27" target="_blank" style="color:#22d3ee;">GitHub</a> |
-    <a href="https://www.linkedin.com/" target="_blank" style="color:#22d3ee;">LinkedIn</a>
-  </p>
+  <div style="margin-top:15px;">
+    <a href="https://github.com/Snehithreddy27" target="_blank" class="btn">
+      GitHub
+    </a>
+    <a href="https://www.linkedin.com/" target="_blank" class="btn">
+      LinkedIn
+    </a>
+  </div>
 </div>
+
 
 
 </div>
