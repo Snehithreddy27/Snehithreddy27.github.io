@@ -5,68 +5,133 @@
     <title>Snehith Reddy | Data Analyst</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f5f5f5;
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #333;
         }
-        h1, h2 {
-            color: #2c3e50;
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
         }
+
+        nav a {
+            color: #cbd5e1;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
         .section {
             background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         }
-        a {
-            color: #2980b9;
-            text-decoration: none;
+
+        h2 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        .project {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e5e7eb;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
-<h1>Snehith Reddy</h1>
-<p><b>Data Analyst | Data Science Graduate</b></p>
-<p>Hyderabad, India</p>
+<header>
+    <h1>Snehith Reddy</h1>
+    <p>Data Analyst | Data Science Graduate</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-<div class="section">
+<div class="container">
+
+<div class="section" id="about">
     <h2>About Me</h2>
     <p>
         I am a Data Science graduate from the University of Maryland, Baltimore County.
-        I am passionate about data analytics, machine learning, and building real-world
-        data solutions. I enjoy transforming raw data into meaningful insights.
+        I am passionate about data analytics, machine learning, and solving real-world
+        problems using data. I enjoy working on end-to-end data projects.
     </p>
 </div>
 
-<div class="section">
+<div class="section" id="skills">
     <h2>Skills</h2>
     <ul>
         <li><b>Programming:</b> Python, SQL</li>
         <li><b>Data Analysis:</b> Pandas, NumPy, EDA</li>
-        <li><b>Visualization:</b> Power BI, Tableau, Matplotlib</li>
+        <li><b>Visualization:</b> Power BI, Tableau</li>
         <li><b>Cloud & Tools:</b> Azure, Git, GitHub</li>
     </ul>
 </div>
 
-<div class="section">
+<div class="section" id="projects">
     <h2>Projects</h2>
-    <ul>
-        <li><b>Sales Data Analysis (Power BI)</b> – Analyzed e-commerce sales data and built dashboards.</li>
-        <li><b>Healthcare Readmission Prediction</b> – ML model to predict hospital readmissions.</li>
-        <li><b>AWS Anomaly Detection</b> – Real-time anomaly detection using KMeans & DBSCAN.</li>
-    </ul>
+
+    <div class="project">
+        <b>Sales Data Analysis (Power BI)</b><br>
+        Built interactive dashboards to analyze sales trends and regional performance.
+    </div>
+
+    <div class="project">
+        <b>Healthcare Readmission Prediction</b><br>
+        Developed ML models to predict patient readmission risk using healthcare data.
+    </div>
+
+    <div class="project">
+        <b>AWS Anomaly Detection System</b><br>
+        Designed a real-time anomaly detection pipeline using AWS services and clustering.
+    </div>
 </div>
 
-<div class="section">
+<div class="section" id="contact">
     <h2>Contact</h2>
-    <p>Email: snehith2730@gmail.com</p>
+    <p>Email: <b>snehith2730@gmail.com</b></p>
     <p>
         <a href="https://www.linkedin.com/">LinkedIn</a> |
         <a href="https://github.com/">GitHub</a>
     </p>
 </div>
 
+</div>
+
+<footer>
+    © 2025 Snehith Reddy | Data Portfolio
+</footer>
+
 </body>
 </html>
-
